@@ -53,7 +53,7 @@
         android:layout_height="75dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/round_corner"
-
+android:id="@+id/next"
         android:text="@string/next"
         android:textSize="@dimen/text_size" />
 

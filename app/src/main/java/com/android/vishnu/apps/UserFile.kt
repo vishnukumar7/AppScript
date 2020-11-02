@@ -1,6 +1,6 @@
 package com.android.vishnu.apps
 
-import UserDetail
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
@@ -15,5 +15,7 @@ interface UserFile{
     fun getAllUser() : List<UserDetail>
 
 
+    @Query("select * from user")
+    fun getAllUserLiveData() : LiveData<List<UserDetail>>
 
 }

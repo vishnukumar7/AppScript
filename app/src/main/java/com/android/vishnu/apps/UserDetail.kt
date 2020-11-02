@@ -13,6 +13,9 @@ class UserDetail {
     @ColumnInfo(name = "UserName")
     lateinit var userName: String
 
+    @ColumnInfo(name = "timeDate")
+    lateinit var timeDate: String
+
     @ColumnInfo(name = "Best_Cricketer")
     lateinit var bestCricket: String
 
