@@ -1,13 +1,22 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
 }
 
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
-    dataBinding {
+   /* dataBinding {
         enabled = true
+    }*/
+    buildFeatures {
+
+        dataBinding = true
+
+        // for view binding:
+        // viewBinding = true
     }
     defaultConfig {
         applicationId "com.android.vishnu.apps"
@@ -24,6 +33,10 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
+    }
+    kapt {
+        useBuildCache = true
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -50,5 +63,14 @@ dependencies {
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    kapt'androidx.lifecycle:lifecycle-compiler:2.3.0-beta01'
+
+// Room
+    implementation'androidx.room:room-runtime:2.3.0-alpha03'
+
+    kapt'androidx.room:room-compiler:2.3.0-alpha03'
+
 
 }

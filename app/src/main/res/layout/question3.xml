@@ -35,38 +35,45 @@
             android:orientation="vertical">
 
             <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/white" />
 
             <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/blue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/blue" />
 
             <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/orange"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/orange" />
 
 
             <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/red"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/red" />
 
             <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/yellow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/yellow" />
 
 
             <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/violet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/violet" />
 
             <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/green"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/green" />
@@ -80,7 +87,7 @@
         android:layout_height="75dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/round_corner"
-
+android:id="@+id/next"
         android:text="@string/next"
         android:textSize="@dimen/text_size" />
 

@@ -13,7 +13,7 @@ import com.android.vishnu.apps.ui.QuestionTwoFragment
 
 class MainActivity : AppCompatActivity() {
 
-    private var string = "dd MMMM hh mm a"
+
     private lateinit var viewPager: ViewPager
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         viewPager = findViewById(R.id.viewPager)
         setupViewPager(viewPager)
+
 
     }
 

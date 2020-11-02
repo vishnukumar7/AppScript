@@ -3,6 +3,8 @@ package com.android.vishnu.apps
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
+import com.android.vishnu.apps.db.AppDatabases
+import com.android.vishnu.apps.db.UserDetail
 
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {

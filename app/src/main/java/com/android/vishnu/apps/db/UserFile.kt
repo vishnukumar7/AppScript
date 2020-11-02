@@ -1,4 +1,4 @@
-package com.android.vishnu.apps
+package com.android.vishnu.apps.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao

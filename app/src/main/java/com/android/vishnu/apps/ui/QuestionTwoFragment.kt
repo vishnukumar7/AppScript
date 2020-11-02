@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioButton
 import android.widget.RadioGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
+import com.android.vishnu.apps.AndroidUtils
 import com.android.vishnu.apps.R
 import com.google.android.material.button.MaterialButton
 
@@ -30,8 +32,14 @@ class QuestionTwoFragment : Fragment() {
         playerSelect=view.findViewById(R.id.selectPlayer)
         next.setOnClickListener {
             val selectId=playerSelect.checkedRadioButtonId
-            println("//next on : $selectId")
-            playerSelectRadio=view.findViewById(selectId)
+           if(selectId!=-1){
+               playerSelectRadio=view.findViewById(selectId)
+               AndroidUtils.setString(requireContext(),AndroidUtils.BEST_CRICKETER,playerSelectRadio.text.toString())
+               viewPager.currentItem=2
+           }
+            else{
+               Toast.makeText(requireContext(),"Select any one option",Toast.LENGTH_SHORT).show()
+           }
 
 
         }

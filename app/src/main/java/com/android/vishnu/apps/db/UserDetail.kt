@@ -1,4 +1,4 @@
-package com.android.vishnu.apps
+package com.android.vishnu.apps.db
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
 class UserDetail {
 
     @PrimaryKey(autoGenerate = true)
-    lateinit var uid: String
+    var uid: Int = 0
 
     @ColumnInfo(name = "UserName")
     lateinit var userName: String

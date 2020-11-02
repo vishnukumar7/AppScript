@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Apps</string>
+    <string name="app_name">Trivia</string>
     <string name="what_s_your_mame">What is your mame ?</string>
     <string name="next">Next</string>
     <string name="option1">Sachin Tendulkar</string>
@@ -16,4 +16,8 @@
     <string name="blue">Blue</string>
     <string name="red">Red</string>
     <string name="violet">Violet</string>
+    <string name="finish">Finish</string>
+    <string name="history">History</string>
+    <string name="summary">SUMMARY</string>
+    <string name="selected_answer">Here are the answers selected:</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.android.vishnu.apps
+package com.android.vishnu.apps.db
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
@@ -17,7 +17,7 @@ abstract class AppDatabases : RoomDatabase() {
                 synchronized(AppDatabases::class.java) {
                     INSTANCE = Room.databaseBuilder(
                         context.applicationContext,
-                        AppDatabases::class.java, "calendarDatabase"
+                        AppDatabases::class.java, "appscript"
                     )
                         .allowMainThreadQueries()
                         .fallbackToDestructiveMigration()

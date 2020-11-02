@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
+import com.android.vishnu.apps.AndroidUtils
 import com.android.vishnu.apps.R
 import com.google.android.material.button.MaterialButton
 
@@ -36,6 +37,7 @@ class QuestionOneFragment : Fragment(), View.OnClickListener {
             userName.error="Enter the your name";
         }
         else{
+           AndroidUtils.Companion.setString(requireContext(),AndroidUtils.USER_NAME,userName.text.toString())
             viewPager.currentItem = 1
         }
     }
