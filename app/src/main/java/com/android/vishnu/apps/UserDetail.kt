@@ -1,3 +1,5 @@
+package com.android.vishnu.apps
+
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -6,15 +8,14 @@ import androidx.room.PrimaryKey
 class UserDetail {
 
     @PrimaryKey(autoGenerate = true)
-    private lateinit var uid: String
+    lateinit var uid: String
 
     @ColumnInfo(name = "UserName")
-    private lateinit var userName: String
+    lateinit var userName: String
 
     @ColumnInfo(name = "Best_Cricketer")
-    private lateinit var bestCricket: String
+    lateinit var bestCricket: String
 
     @ColumnInfo(name = "colors")
-    private lateinit var colors: String
-
+    lateinit var colors: String
 }

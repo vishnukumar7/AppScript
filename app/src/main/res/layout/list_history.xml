@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/horizontal"
+    android:layout_marginEnd="@dimen/horizontal"
+    android:layout_height="wrap_content">
+    
+    <data >
+        <variable
+            name="user"
+            type="com.android.vishnu.apps.UserDetail" />
+    </data>
+
+    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+        app:contentPadding="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginStart="@dimen/horizontal"
+        android:layout_marginEnd="@dimen/horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/gameId"
+                android:padding="5dp"
+                android:text="'Game :' @{user.uid}"
+                android:textColor="@color/black"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:text="Name : "
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_weight="1"
+                    android:id="@+id/userName"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:text="@string/question2"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_weight="1"
+                android:id="@+id/answerBest"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:text="Answers : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_weight="1"
+                android:text="@string/question3"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Answers : "
+                android:id="@+id/answerColor"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    
+</layout>

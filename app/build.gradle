@@ -6,7 +6,9 @@ plugins {
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
-
+    dataBinding {
+        enabled = true
+    }
     defaultConfig {
         applicationId "com.android.vishnu.apps"
         minSdkVersion 22
@@ -19,7 +21,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
